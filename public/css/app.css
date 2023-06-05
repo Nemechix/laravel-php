@@ -1,0 +1,12 @@
+.navBar-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 20px;
+}
+
+.ul-container{
+        display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
