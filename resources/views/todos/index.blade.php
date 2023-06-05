@@ -2,6 +2,12 @@
 
 @section('content')
     <div class="div-form-container">
-        hello
+        <form action="">
+            <div class="text1">
+            <label for="">Tarea</label>
+            <input type="text">
+            </div>
+            <button type="submit">Crear nueva tarea</button>
+        </form>
     </div>
 @endsection
