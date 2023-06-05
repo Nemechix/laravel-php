@@ -1,5 +1,7 @@
 @extends('app')
 
 @section('content')
-    <div class="div-form-container"></div>
+    <div class="div-form-container">
+        hello
+    </div>
 @endsection
