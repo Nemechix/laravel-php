@@ -18,5 +18,23 @@
             </div>
             <button type="submit">Crear nueva tarea</button>
         </form>
+
+        <div class="tareas">
+            @foreach ($todos as $todo)
+            <div class="tareas2">
+                <div class="title-tarea">
+                    <a href="{{route('todos-edit', ['id' => $todo->id]) }}">{{ $todo->title}}</a>
+                </div>
+
+                <div>
+                    <form action=" {{route('todos-destroy', [$todo->id]) }}" method="POST">
+                    @method('DELETE')
+                    @csrf
+                    <button>Eliminar</button>
+                    </form>
+                </div>
+            </div>
+            @endforeach
+        </div>
     </div>
 @endsection

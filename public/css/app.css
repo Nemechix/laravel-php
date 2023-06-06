@@ -27,9 +27,22 @@
 
 .div-form-container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     border: 3px solid lightblue;
     border-radius: 15px;
     width: 50%;
     height: 500px;
+    gap: 30px;
+    align-items: center;
+}
+
+
+
+.tareas2{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.title-tarea{
+    margin-right: 7px;
 }
